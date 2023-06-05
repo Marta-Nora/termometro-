@@ -1,8 +1,8 @@
 input.onButtonPressed(Button.A, function () {
-	
+    basic.showNumber(input.temperature())
 })
 input.onButtonPressed(Button.B, function () {
-    humedad = 0
+    basic.showNumber(humedad)
 })
 let humedad = 0
-radio.setGroup(115)
+humedad = radio.receivedPacket(RadioPacketProperty.SignalStrength)
